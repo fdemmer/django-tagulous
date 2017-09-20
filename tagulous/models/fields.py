@@ -413,7 +413,7 @@ class TagField(BaseTagField, models.ManyToManyField):
     description = 'A tag field'
 
     # List of fields which are forbidden from __init__
-    forbidden_fields = ('db_table', 'through', 'symmetrical')
+    forbidden_fields = ('db_table', 'symmetrical')
 
     def __init__(self, *args, **kwargs):
         """
